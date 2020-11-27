@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--This will declare the type of document for this page-->
+
+<!--This will declare that the document language is English-->
+<html lang="en">
+<!--This will open the header tag for this website-->
+<head>
+<!--This will link the css stylesheet to my HTML page-->   
+<link rel="stylesheet" type="text/css" href="style/style.css">  
+<!--This will allow my website to adjust the content in it according to the user's browser-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="Assignment" content="CPD Report">
+<meta name="Language" content="HTML, CSS, JavaScript">
+<meta name="author" content="Muhammad Shaheer Mahmood">
+<!--This tag will specify what character set I used-->
+<meta charset="utf-8">
+<!--This will give a title to my page-->
+<title>CPD Website - Contact</title>
+<!--This will add the library font which I will use to customize the text style of my website-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<!--This will close the header tag for my website-->
+</head>
+<!--This will open the body tag for my website-->
+<body>
+    <header>
+    <!--This will create a div container with the class "top-img"-->
+    <div class="top-img">
+
+            <!--This will add a break-->
+            <br>
+            <!--This will create a header with the first level, with the class "main", which allows style in css-->
+            <h1 class="main">Muhammad Shaheer Mahmood</h1>
+        <!--This will add a break-->
+            <br>
+        <!--This will add a break-->
+        <br>
+                <!--This will create a div container with the class "menu"-->
+                <div class="menu">
+                 <!--This will create a bulleted list with the class "menu", within the div container-->
+                    <ul class="menu">
+                      <!--The li contains link, which will take the user to different pages. It also has a class which allows tyle in css-->
+                        <li class="menu"><a class="menu" href="index.html">Home</a></li>
+                        <li class="menu"><a class="menu" href="linkedin.html">Linkedin</a></li>
+                        <li class="menu"><a class="menu" href="devsoc.html">DevSoc</a></li>
+                        <li class="menu"><a class="menu" href="job.html">Part-Time</a></li>
+                        <li class="menu"><a class="menu" href="hobbies.html">Hobbies</a></li>
+                        <li class="menu"><a class="menuactive" href="contact.html">Contact</a></li>
+                    <!--This will close the ul tag-->
+                    </ul>
+                     <!--This will close the div container which we opened before-->
+                </div>       
+               </div>
+    
+                <!--This will create a div container with the class "menu1"-->
+                <div class="menu1">
+                <!--This will create a div container with the class "mobile-menu"-->
+                <div class="mobile-menu">
+                <a href="contact.html" class="active">Contact</a>
+                <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="linkedin.html">LinkedIn</a>
+                <a href="devsoc.html">Devsoc</a>
+                <a href="job.html">Part-Time</a>   
+                <a href="hobbies.html">Hobbies</a>
+                
+             <!--This will close the div container which we opened before-->
+             </div>
+    
+    <!--The "a" tag here will create a hyperlink with the class icon and when clicked it will run a specific task"-->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <!--The "i" tag is used to make text italic, also used when demonstrating other languages"-->
+    <i class="fa fa-bars"></i>
+<!--This will close the "a" tag-->
+  </a>
+             </div>
+            <!--This will close the div container which we opened before-->  
+            </div>
+               <!--This tag will open an area where a script can be added-->
+               <script>
+               function myFunction() {
+               var x = document.getElementById("myLinks");
+               if (x.style.display === "block") {
+               x.style.display = "none";
+               } else {
+               x.style.display = "block";
+               }
+               }
+               </script><!--This tag will close the script element-->
+           
+           </header>
+    
+    
+    <section>
+    <!--This will create a div container with the id "firstbox"-->
+    <div id="firstbox">
+            <!--This will create a div container with the id "title"-->
+            <div id="title">
+                How to contact me:
+                <!--This will close the div container which we opened before-->
+            </div>
+        <br>
+        <!--This will create a div container with the class "row"--> 
+        <div class="row">
+        <!--This will create a div container with the class "col-5"-->
+        <div class="col-5">
+            <!--This will create a header with the second level, with the class "content", which allows style in css-->
+            <h2 class="content">Instagram</h2>
+            <!--The "p" tag is used for paragraphs, here the tag has a class name of "content" there are 3 "p" tags here-->
+            <p class="content">There are several ways through which you can contact me, Instagram is one of those. </p>
+            <p class="content">You can message me directly through instagram if you find or have any issues with the website.</p>
+            <p class="content">Below the image I have given my Instagram account link. Once you click on it will take you to my Instagram page.</p><br>
+            <!--This tag will allow me to (embed) link an image with a class on my HTML page--><!--Image was taken from Google"-->
+            <img alt="Instagram Logo" src="./images/contact/ins.jpg" class="center">
+            <!--The "a" tag here will create a hyperlink with the target "blank" which will allow the user to open the link which has been put in the href hyperlink-->
+            <div class="social"><a class="social" href="https://www.instagram.com/m_shaheer786/" target="_blank">Instagram Profile</a></div>
+
+        </div>
+        <!--This will create a div container with the class "col-6"-->
+        <div class="col-6">
+            <!--This will create a header with the second level, with the class "content", which allows style in css-->
+            <h2 class="content">Facebook</h2>
+            <!--The "p" tag is used for paragraphs, here the tag has a class name of "content" there are 3 "p" tags here-->
+            <p class="content"> Another way through which you can contact me is Facebook, in case you do not have instagram or you do not use it.</p>
+            <p class="content">You can message me directly through Facebook if you find or have any issues with the website.</p>
+            <p class="content">Below the image I have given my Facebook account link. Once you click on it will take you to my Facebook page.</p><br>
+            <!--This tag will allow me to (embed) link an image with a class on my HTML page--><!--Image was taken from Google"-->
+            <img alt="Facebook Logo" src="./images/contact/fb.jpg" class="center">
+            <!--The "a" tag here will create a hyperlink with the target "blank" which will allow the user to open the link which has been put in the href hyperlink-->
+            <div class="social"><a class="social" href="https://www.facebook.com/shaheer.figo" target="_blank">Facebook Profile</a></div>
+            
+        </div>
+            <!--This will create a div container with the class "col-6"-->
+            <div class="col-6">
+            <!--This will create a header with the second level, with the class "content", which allows style in css-->
+            <h2 class="content">GitHub</h2>
+            <!--The "p" tag is used for paragraphs, here the tag has a class name of "content" there are 3 "p" tags here-->
+            <p class="content">In case you do not have Instagram or Facebook or you do not use them both. You can contact me through GitHub.</p>
+            <p class="content"> You can message me directly through GitHub if you find or have any issues with the website.</p>
+            <p class="content">Below the image I have given my GitHub account link. Once you click on it will take you to my GitHub page.</p><br>
+            <!--This tag will allow me to (embed) link an image with a class on my HTML page--><!--Image was taken from Google"-->
+            <img alt="GitHub Logo" src="./images/contact/git.jpg" class="center">
+            <!--The "a" tag here will create a hyperlink with the target "blank" which will allow the user to open the link which has been put in the href hyperlink-->
+            <div class="social"><a class="social" href="https://github.com/Muhammad-786" target="_blank">GitHub Profile</a></div>
+        </div>
+       </div>
+        <br>
+    <!--This will close the div container which we opened before-->    
+    </div>
+    </section>
+    <!--This will open the footer tag for my website-->
+    <footer>
+    <!--This will create a line break which will seprate my content-->
+    <hr>
+        <!--This will create a div container with the class "footer-nav"-->
+        <div class="footer-nav">
+            <ul class="footer-nav">
+            <li class="footer-nav"><a class="footer-navactive" href="index.html">Home</a></li>
+            <li class="footer-nav"><a class="footer-nav" href="linkedin.html">LinkedIn</a></li>
+            <li class="footer-nav"><a class="footer-nav" href="devsoc.html">DevSoc</a></li>
+            <li class="footer-nav"><a class="footer-nav" href="job.html">Part-Time</a></li>
+            <li class="footer-nav"><a class="footer-nav" href="hobbies.html">Hobbies</a></li>
+            <li class="footer-nav"><a class="footer-nav" href="contact.html">Contact</a></li>
+        <!--This will close the ul tag-->
+        </ul>
+        <!--This will close the div container which we opened before-->
+        </div>
+    <!--The "a" tag here will create a hyperlink with the tag "img" in it which allow me to add an image--><!--This image was taken from Google"-->
+    <a href="#top"><img class="Up" alt="arrow pointing up" src="images/footer/up.png"></a>
+    <!--The "p" tag is used for paragraphs, here the tag has a class name of "copyright"-->
+    <p class="copyright"> Copyright &copy; Muhammad Shaheer Mahmood 2020 </p> 
+    <!--This will close the footer tag for my website-->
+    </footer>
+<!--This will close the body tag which we opened before-->       
+</body>
+<!--This tag will close the html tag for my website-->
+</html>

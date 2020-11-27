@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--This will declare the type of document for this page-->
+
+<!--This will declare that the document language is English-->
+<html lang="en">
+<!--This will open the header tag for this website-->
+<head>
+<!--This will link the css stylesheet to my HTML page-->   
+<link rel="stylesheet" type="text/css" href="style/style.css">  
+<!--This will allow my website to adjust the content in it according to the user's browser-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="Assignment" content="CPD Report">
+<meta name="Language" content="HTML, CSS, JavaScript">
+<meta name="author" content="Muhammad Shaheer Mahmood">
+<!--This tag will specify what character set I used-->
+<meta charset="utf-8">
+<!--This will give a title to my page-->
+<title>CPD Website - DevSoc</title>
+<!--This will add the library font which I will use to customize the text style of my website-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<!--This will close the header tag for my website-->
+</head>
+       <header>
+    <!--This will create a div container with the class "top-img"-->
+    <div class="top-img">
+        
+            <!--This will add a break-->
+            <br>
+            <!--This will create a header with the first level, with the class "main", which allows style in css-->
+            <h1 class="main">Muhammad Shaheer Mahmood</h1>
+        <!--This will add a break-->
+            <br>
+        <!--This will add a break-->
+        <br>
+                <!--This will create a bulleted list with the class "menu", within the div container-->
+                <div class="menu">
+                    <!--This will create a bulleted list with a class, within the div container-->
+                    <ul class="menu">
+                      <!--The li contains link, which will take the user to different pages. It also has a class which allows tyle in css-->
+                        <li class="menu"><a class="menu" href="index.html">Home</a></li>
+                        <li class="menu"><a class="menu" href="linkedin.html">Linkedin</a></li>
+                        <li class="menu"><a class="menuactive" href="devsoc.html">DevSoc</a></li>
+                        <li class="menu"><a class="menu" href="job.html">Part-Time</a></li>
+                        <li class="menu"><a class="menu" href="hobbies.html">Hobbies</a></li>
+                        <li class="menu"><a class="menu" href="contact.html">Contact</a></li>
+                    <!--This will close the ul tag-->
+                    </ul>
+                     <!--This will close the div container which we opened before-->
+                </div> 
+               
+     </div>
+    
+                <!--This will create a div container with the class "menu1"-->
+                <div class="menu1">
+                <!--This will create a div container with the class "mobile-menu"-->
+                <div class="mobile-menu">
+                <a href="devsoc.html" class="active">Devsoc</a>
+               
+                <div id="myLinks">
+                <a href="index.html">Home</a>   
+                <a href="linkedin.html">LinkedIn</a>
+                <a href="job.html">Part-Time</a>   
+                <a href="hobbies.html">Hobbies</a>
+                <a href="contact.html">Contact</a>
+             <!--This will close the div container which we opened before-->
+             </div>
+    
+    <!--The "a" tag here will create a hyperlink with the class icon and when clicked it will run a specific task"-->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <!--The "i" tag is used to make text italic, also used when demonstrating other languages"-->
+    <i class="fa fa-bars"></i>
+<!--This will close the "a" tag-->
+  </a>
+             </div>
+            <!--This will close the div container which we opened before-->  
+            </div>
+               <!--This tag will open an area where a script can be added-->
+               <script>
+               function myFunction() {
+               var x = document.getElementById("myLinks");
+               if (x.style.display === "block") {
+               x.style.display = "none";
+               } else {
+               x.style.display = "block";
+               }
+               }
+               </script><!--This tag will close the script element-->
+           </header>
+<!--This will open the body tag for my website-->
+<body>
+ 
+    <section>
+          <!--This will create a div container with the id "float"-->
+         <div id="firstbox"> 
+         <!--This will create a div container with the id "float"-->
+    	 <div id="float"></div>
+       <!--This will create a div container with the id "title"-->
+       <div id="title">
+                DevSoc Activities
+           <!--This will close the div container which we opened before-->
+            </div>
+             <!--This will create a div container with the class "row"-->
+        <div class="row">
+        <!--This will create a div container with the class "col-1"-->
+        <div class="col-1">
+            <!--This will create a header with the second level, with the class "content", which allows style in css-->
+            <h2 class="content">Python Workshop</h2>
+            <!--The "p" tag is used for paragraphs, here the tag has a class name of "content" there are 3 "p" tags here-->
+            <p class="content">In the python workshop, which was being taught by, Peter Lampard, he introduced as to basic fuctions of Python and wrote a program, which we followed. We also made a game a rock, paper, scissors game. </p>
+            <p class="content">This session helped me a lot, I learned new things like python variables, libraries, loops, if, elif and else statements and many more things.</p>
+            <p class="content">In the image below you can see what the poster for the first python workshop looks like. You can also view the image by clicking on it.</p><br>
+            <!--The "a" tag here will create a hyperlink with the target "open" which will allow the user to open the image which has been put in the href hyperlink--><!--Image was taken from DevSoc"-->
+            <a target="_open" href="images/devsoc/python-workshop.png">
+            <!--This tag will allow me to (embed) link an image with a class on my HTML page--><!--Image was taken from DevSoc"-->
+            <img alt="Python Workshop" src="./images/devsoc/python-workshop.png" class="center"></a>
+        </div>
+        <!--This will create a div container with the class "col-2"-->
+        <div class="col-2">  
+            <!--This will create a header with the second level, with the class "content", which allows style in css-->
+            <h2 class="content">Python Workshop 2.0</h2>
+            <!--The "p" tag is used for paragraphs, here the tag has a class name of "content" there are 3 "p" tags here-->
+            <p class="content">Since I was very happy with the first python workshop hosted by DevSoc, I decided to join the second session which was on a different day.</p>
+            <p class="content">On the second session, I learned even more new things such as, classes, def functions, loops, arrays and a short introduction to dictionaries.</p>
+            <p class="content">In the image below you can see what the poster for the second python workshop looks like. You can also view the image by clicking on it.</p>
+            <br>
+            <!--The "a" tag here will create a hyperlink with the target "open" which will allow the user to open the image which has been put in the href hyperlink--><!--Image was taken from DevSoc"-->
+            <a target="_open" href="images/devsoc/python-workshop2.PNG">
+            <!--This tag will allow me to (embed) link an image with a class on my HTML page--><!--Image was taken from DevSoc"-->
+            <img alt="Python Workshops 2.0" src="./images/devsoc/python-workshop2.PNG" class="center1"></a>
+        </div>
+    <!--This will close the div container which we opened before-->
+    </div>
+    <!--This will create a div container with the class "row"-->
+    <div class="row">
+         <!--This will create a div container with the class "col-3"-->
+        <div class="col-3">
+            <!--This will create a header with the second level, with the class "content", which allows style in css-->
+            <h2 class="content">Cryptography Challenge</h2>
+            <!--The "p" tag is used for paragraphs, here the tag has a class name of "content" there are 3 "p" tags here-->
+             <p class="content">As I mentioned before, for the cryptography challenge I had to find a secret password, divided in 3 parts.</p>
+             <p class="content">To find it, first I had to find the hints, after I found all the hints, they would take me to the actual encypted passwords, after that I had to decode the passwords. The first two were on Instagram and the other one was on twitter.</p>
+             <p class="content">In the image below you can see what the poster for the cryptography challenge looks like. You can also view the image by clicking on it.</p><br>
+            <!--The "a" tag here will create a hyperlink with the target "open" which will allow the user to open the image which has been put in the href hyperlink--><!--Image was taken from DevSoc"-->
+            <a target="_open" href="images/devsoc/crypto.gif">
+            <img alt="Cryptography Challenge" src="./images/devsoc/crypto.gif" class="center2"></a>
+         </div>
+         <!--This will close the div container which we opened before-->
+         </div>  
+    
+    <!--This will create a div container with the id "firstbox"-->
+    <div id="firstbox">
+        <!--This will create a div container with the id "title"-->
+            <div id="title">
+                DevSoc
+            <!--This will close the div container which we opened before-->
+            </div>
+        <!--This tag will allow me to (embed) link an image with a class on my HTML page--><!--Image was taken from Google"-->
+        <img class="me" alt="devsoc logo" src="images/table/devsoc.jpg">
+            <!--This will create a div container with the id "content"-->
+            <div id="content">
+                   To get extra help and gain more CPD hours I decided to join a society. So I joined the DevSoc society, DevSoc is a society of programmers and students from all years, it also has certified mentors which help you out. When I joined I noticed the members were quite friendly and helpful. <br><br>
+
+                   They also had a lot of events going on such as, cryptography challenge, python workshops, mtm workshops and many more. I decided to do the cryptography challenge. <br><br>
+                   
+                   For the cryptography challenge, I had to find a secret password which was enctrypted in a different language and was divided in 3 parts. 
+            <!--This will create a div container with the id "float"-->      
+            <div id="float"></div>
+            <!--This will close the div container which we opened before-->
+            </div>
+            <!--This will create a div container with the id "title"-->
+            <div id="title">
+                Outcome
+            <!--This will close the div container which we opened before-->
+            </div>
+            <!--This will create a div container with the id "content"-->
+            <div id="content">
+                After I completed the cryptography challenge and the python workshops, I learned new things such as ciphers and that text can be crypted in different languages.<br><br> The python workshops also helped in having a better understanding about the language, as I was a beginner to the language. As I mentioned before I earned a total of 10 CPD hours from DevSoc. <br><br> After completing the cryptography challenge I gained a total of 10 CPD hours. I also had 4 hours for python workshops which were hosted by DevSoc, since the limit is 10 hours per activity I am not able to go over 10 hours.
+           <!--This will close the div container which we opened before-->
+           </div>    
+     </div>
+      </div>
+        </section>
+     <!--This will add a break-->
+    <br>
+    <!--This will open the footer tag for my website-->
+    <footer>
+    <!--This will create a line break which will seprate my content-->
+    <hr>
+        <!--This will create a div container with the class "footer-nav"-->
+        <div class="footer-nav">
+            <ul class="footer-nav">
+            <li class="footer-nav"><a class="footer-nav" href="index.html">Home</a></li>
+            <li class="footer-nav"><a class="footer-nav" href="linkedin.html">LinkedIn</a></li>
+            <li class="footer-nav"><a class="footer-nav" href="devsoc.html">DevSoc</a></li>
+            <li class="footer-nav"><a class="footer-nav" href="job.html">Part-Time</a></li>
+            <li class="footer-nav"><a class="footer-nav" href="hobbies.html">Hobbies</a></li>
+            <li class="footer-nav"><a class="footer-nav" href="contact.html">Contact</a></li>
+        <!--This will close the ul tag-->   
+        </ul>
+        <!--This will close the div container which we opened before-->
+        </div>
+    <!--The "a" tag here will create a hyperlink with the tag "img" in it which allow me to add an image--><!--This image was taken from Google"-->
+    <a href="#top"><img class="Up" alt="arrow pointing up" src="images/footer/up.png"></a>
+    <!--The "p" tag is used for paragraphs, here the tag has a class name of "copyright"-->
+    <p class="copyright"> Copyright &copy; Muhammad Shaheer Mahmood 2020 </p> 
+    <!--This will close the footer tag for my website-->
+    </footer>
+<!--This will close the body tag which we opened before-->       
+</body>
+   
+<!--This tag will close the html tag for my website-->
+</html>

@@ -1,0 +1,503 @@
+/*This will add style to the entire website*/
+html, body
+{/*This will add background color, font family which is the way the font look,
+    height of 100%, margin of 0, padding of 0 and a max-width of 100%.*/
+   background-color:#003b49;
+   font-family: 'Thasadith', sans-serif;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   max-width: 100%;
+
+}
+/*This will create a class that applies style to all elements beginning with "col-" */
+[class*="col-"] {
+   /*This will make all the elements using the class "col-" float left, have a width of 100%, box sizing, border, it will hide the overflow and add a padding of 16px */
+   float: left;
+   width: 100%;
+   box-sizing: border-box;
+   border: solid #FFFFFF 2px;
+   overflow: hidden;
+   padding: 16px;
+}
+/*This will create a media query which will only work when the screen is 768px or bigger*/
+@media only screen and (min-width: 768px) {
+    /*This is using a selector which will apply box sizing*/
+   * {box-sizing: border-box;}
+   /*This will hide the desktop menu which is "div.menu" and show the mobile menu "div.menu1".*/
+   div.menu {display: block;}
+   div.menu1 {display: none;}
+   /*This will set the padding size of 70px to the elements using the class "text".*/
+    #text{padding: 70px;}
+   /*This will set the width of col-1 to 50%.*/
+   .col-1 {width: 50%;}
+   /*This will set the width of col-1 to 50%.*/
+   .col-2 {width: 50%;}
+    /*This will set the width of col-1 to 100%.*/
+   .col-3 {width: 100%;}
+    /*This will set the width of col-1 to 100%.*/
+   .col-4 {width: 100%;}
+    /*This will set the width of col-1 to 32%.*/
+   .col-5 {width: 32%;}
+    /*This will set the width of col-1 to 32%.*/
+   .col-6 {width: 32%;}
+    /*This will set the width of col-1 to 32%.*/
+   .col-7 {width: 32%;}
+    /*This will set the font-size of 18px to the element p which has the class "content"*/
+    p.content {font-size: 18px;}
+     /*This will set the font-size of 23px to the element h which has the class "content"*/
+    h2.content {font-size: 23px;}
+}
+/*This will create a media query which will only work when the screen is smaller than 768px*/
+@media only screen and (max-width: 768px) {
+    /*This is using a selector which will apply box sizing, margin and padding.*/
+   * {box-sizing: border-box;}
+   * {margin: 0;padding: 0;}
+    /*This will hide the mobile menu which is "div.menu1" and show the desktop menu "div.menu".*/
+   div.menu {display: none;}
+   div.menu1 {display: block;}
+    /*This will clear the text from both sides, align text center, set padding-top of 6 px and padding-bottom to 6px when in desktop mode. */ 
+   .footer-nav {clear: both; text-align: center; padding-top: 6px; padding-bottom: 6px;}
+    /*This will set the font-size of 18px and padding top to 8px to the element p which has the class "content"*/
+    p.content {font-size: 18px; padding-top: 8px;}
+     /*This will set the font-size of 20px to the element h which has the class "content"*/
+    h2.content {font-size: 20px;}
+     /*This will set the width of 8px for the scrollbar*/
+    ::-webkit-scrollbar {width: 8px;} 
+    /*This will set the font size to 11px and padding top to 7px*/
+    p.copyright {font-size: 11px;padding-top: 7px;}
+}
+
+ul.menu {
+/*This will remove the list style, make margin and padding 0,
+hide the overflow, change background color, set shadow, set font size,
+font weight and max width*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #003b49;
+  box-shadow: 10px 10px 1px -1px rgba(0,0,0,0.75);
+  font-size: 23px;
+  font-weight: bold;
+  max-width: 100%;
+
+}
+
+li 
+{
+/*This will make the element float left*/
+  float: left;
+}
+li a 
+{
+/*This will block the display, change color, align text to center,
+change padding and remove text decoration.*/
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 12px 20px;
+  text-decoration: none;
+  
+      
+}
+li a:hover 
+{
+/*This will change the background color*/
+  background-color: #000000;
+}
+li a.menuactive{
+/*This will change the background color*/
+ background-color: #000000;
+}
+h1.main {
+/*This will change color, font family, margin and font size.*/
+    color: #FFFFFF;
+    font-family: Poppins;
+    margin: 0;
+    font-size: 42px
+}
+.top-img {
+/*This will align the emelement, then the background image will add an image chosen by user, it will change background size and has shadow.*/
+  text-align: center;
+  background-image: url("../images/nav.jpg"); /*Image was taken from google*/
+  padding: 16px;
+  background-size: 100% 160%;
+  box-shadow: 1px 18px 24px -7px rgba(255,255,255, 0.3);
+}
+::-webkit-scrollbar {
+/*This will change width of the scrollbar.*/
+  width: 11px;
+}
+
+
+::-webkit-scrollbar-track {
+/*This will change box shadow and border radius of the scrollbar.*/
+  box-shadow: inset 0 0 3px #FFFFFF; 
+  border-radius: 10px;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+/*This will change background color and border radius.*/
+  background: #FFFFFF; 
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+/*This will change the background color of the scrollbar.*/
+  background: #FFFFFF; 
+}
+
+#firstbox
+{
+/*This will change the width, margin-left, margin-right and max-width of the firstbox class.*/
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+#title
+{
+/*This will change the margin-top, width, align text to center, font size, font weight, color, padding-bottom and max-width of the title id.*/
+    margin-top: 25px;
+    width: 1000px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+    max-width: 100%;
+}
+#content
+{
+/*This will align text to justify, change margin-bottom, color, font size and max-width of the content id.*/
+    text-align: justify;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+    font-size: 20px;
+    max-width: 100%;
+    
+}
+#content1
+{
+/*This will align text to center, change margin-bottom, color, font size and max-width of the content1 id.*/
+    text-align: center;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+    font-size: 19px;
+    max-width: 100%;
+}
+
+.row {
+/*This will set display to flex, set items to stretch and add a wrap.*/
+   display: flex;
+   align-items: stretch;
+   flex-wrap: wrap;
+}
+p.content {
+/*This will change color and align text to left.*/
+   color: #FFFFFF;
+   text-align: left;
+}
+h2.content {
+/*This will change color and align text to center.*/
+    text-align: center;
+    color: #FFFFFF;
+}
+.center{
+/*This will change width, block display, change margin left and right.*/
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+.center1{
+/*This will change width, block display, change margin left and right.*/
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center2{
+/*This will change width, block display, change margin left and right.*/
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center3{
+/*This will change width, block display, change margin left and right.*/
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center:hover{
+/*This will add animation and shadow.*/
+    transform: scale(1.2);
+    box-shadow: 10px 10px 24px -7px rgba(255,255,255, 0.3);
+}
+.center1:hover{
+/*This will add animation and shadow.*/
+    transform: scale(1.1);
+    box-shadow: 10px 10px 24px -7px rgba(255,255,255, 0.3);
+}
+.center2:hover{
+/*This will add animation and shadow.*/
+    transform: scale(1.2);
+    box-shadow: 10px 10px 24px -7px rgba(255,255,255, 0.3);
+}
+.center3:hover{
+/*This will add animation and shadow.*/
+    transform: scale(1.2);
+    box-shadow: 10px 10px 24px -7px rgba(255,255,255, 0.3);
+}
+#item{
+/*This will change margin-top, color, add shadow and border on the item id.*/
+    margin-top: 20px;
+    box-shadow: 1px 22px 15px -7px rgba(255,255,255, 0.3);
+    border: 1px solid #FFFFFF; 
+   
+    
+}
+
+img.cert
+{
+/*This will change margin, height, width, the way object fit, make it float right and max width.*/
+    height: 280px;
+    width: 280px;
+    object-fit:fill;
+    float: right;
+    margin: 5px;5px;5px;5px;
+    max-width: 100%;
+}
+img.cert:hover
+{
+/*This will add animation*/
+    transform: scale(1.2);
+}
+#text
+{
+/*This will add padding*/
+    padding: 10px;
+}
+a.certBT{
+/*This will change margin, height, width, text decoration, background color, color, vertical align to middle, font size, and float to left.*/
+    width: 160px;
+    height: 40px;
+    background-color: #003b49;
+    text-align: center;
+    color: #FFFFFF;
+    vertical-align:middle;
+    font-size: 25px;
+    float: left;
+    text-decoration: none;
+}
+#certBT
+{
+/*This will change margin, height, width, text decoration, background color, color, vertical align to middle, font size, float to left, margin-top and margin-left.*/
+    width: 160px;
+    height: 40px;
+    background-color: #003b49;
+    text-align: center;
+    color: #FFFFFF;
+    vertical-align:middle;
+    font-size: 25px;
+    float: left;
+    margin-top: 95px;
+    margin-left: 3px;
+}
+#certBT:hover
+{
+/*This will change margin, height, width, text decoration, background color, color, vertical align to middle, font size, float to left and margin-left.*/
+    width: 100px;
+    height: 34px;
+    background-color: #FFFFFF;
+    text-align: center;
+    color: #FFFFFF;
+    vertical-align:middle;
+    font-size: 25px;
+    float: left;
+    margin-left: 40px;
+}
+
+#certBTB
+{
+/*This will change margin, height, width, text decoration, background color, color, vertical align to middle, font size, float to left and margin-left.*/
+    width: 200px;
+    height: 34px;
+    background-color: #FFFFFF;
+    text-align: center;
+    color: #FFFFFF;
+    vertical-align:middle;
+    font-size: 25px;
+    float: left;
+    margin-left: 40%;
+}
+img.me
+{
+/*This will make element float right, change the height, width, object fit, margin, max width and border radius*/
+    float: right;
+    height: 180px;
+    width: 180px;
+    object-fit:cover;
+    margin: 5px 5px 5px 10px;
+    max-width: 100%;
+    border-radius: 60%;
+}
+img.purpose
+{
+/*This will make element float left, change the height, width, object fit, margin, max width and border radius*/
+    float: left;
+    height: 180px;
+    width: 180px;
+    object-fit:cover;
+    margin: 5px 10px 5px 5px;
+    max-width: 100%;
+    border-radius: 60%;
+}
+
+#float
+{
+/*This will clear the text from both sides*/
+    clear: both;
+    
+}
+table, th, td, tr{
+/*This will set border*/
+    border: 1px solid #FFFFFF;
+}
+td
+{
+/*This will set height and max width*/
+    height: 60px;
+    max-width: 100%;
+}
+table
+{
+/*This will set margin-top, margin-bottom and max width*/
+    margin-top: 10px;
+    margin-bottom: 35px;
+    max-width: 100%;
+}
+tr
+{
+/*This will set margin-top and max width*/
+    margin-top: 25px;
+    max-width: 100%;
+}
+hr{
+/*This will set height, border and border-top-width*/
+    height: 5px;
+    border: 0px solid #FFFFFF;
+    border-top-width: 3px;
+}
+li a.footer-nav {
+/*This will change text decoration and color*/
+   text-decoration: none;
+   color: #FFFFFF;
+}
+
+
+li.footer-nav {
+/*This will aling with display and change padding*/
+   display: inline;
+   padding: 6px;
+}
+
+
+ul.footer-nav {
+/*This will change list style, padding-left, margin-top and margin-bottom.*/
+   list-style-type: none;
+   padding-left: 50px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+
+
+.footer-nav li a:hover {
+/*This will change hover color*/
+   color: #FFFFFF;
+}
+img.Up
+{
+/*This will change position, bottom, left, font-size and height.*/
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    font-size: 18px;
+    height:50px;
+}
+p.copyright {
+/*This will aling text to center, clear the text from both sides, change color, font size and max width.*/
+    text-align: center;
+    clear: both;
+    color: #FFFFFF;
+    font-size: 18px;
+    max-width: 100%;
+}
+.social{
+/*This will change color, font size and text decoration.*/
+    color: #FFFFFF;
+    font-size: 25px;
+    text-decoration: underline;
+}
+div.social{
+/*This will aling text to center.*/
+    text-align: center;
+}
+.menu1 {
+/*This will remove the list style, make margin and padding 0,
+hide the overflow, change background color, set shadow, set font size,
+font weight and max width*/
+  list-style-type: none;
+  background-color: #003b49;
+  box-shadow: 1px 10px 1px -1px rgba(0,0,0,0.75);
+  font-size: 20px;
+  margin: 0;
+  overflow: hidden;
+  font-weight: bold;
+  max-width: 100%;
+}
+.mobile-menu {
+/*This will hide the overflow, change background color and the position.*/
+  overflow: hidden;
+  background-color: #003b49;
+  position: relative;
+}
+
+.mobile-menu #myLinks {
+/*This will set the display to none.*/
+  display: none;
+}
+
+.mobile-menu a {
+/*This will hide the change color, padding, decoration, font size and display to block.*/
+  color: #FFFFFF;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+}
+
+.mobile-menu a.icon {
+/*This will change background color, set display to block, right to 0 and top to 0 and the position.*/
+  background: #000000;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.mobile-menu a:hover {
+/*This will change the hover color*/
+  background-color: #000000;
+}
+
+.active {
+/*This will change the hover color*/
+  background-color: #000000;
+}
