@@ -282,7 +282,7 @@ img.cert:hover
 #text
 {
 /*This will add padding*/
-    padding: 10px;
+    padding: 30px;
 }
 a.certBT{
 /*This will change margin, height, width, text decoration, background color, color, vertical align to middle, font size, and float to left.*/
