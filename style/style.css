@@ -5,8 +5,9 @@ html, body
    background-color:#003b49;
    font-family: 'Thasadith', sans-serif;
    height: 100%;
-   margin: 10px;
+   margin: 0;
    padding: 0;
+   width: 770px;
    max-width: 100%;
 
 }
