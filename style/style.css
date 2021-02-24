@@ -7,7 +7,7 @@ html, body
    height: 100%;
    margin: 0 auto;
    padding: 0;
-   width: 770px;
+   max-width: 100%;
 
 }
 /*This will create a class that applies style to all elements beginning with "col-" */
